@@ -11,18 +11,20 @@ So to calculate emissions,  two types of input data is required.
 - activity data 
 - emission factors
 
-#### Activity data
-Activity data is a quantitative measure of a level of activity that results in GHG emissions. 
-This is the data the organization captures from their operations / supplychain,etc 
-For example, how may liters of fuel consumed, how much electricity is consumed, how many kilograms of material purchased , etc
+**Activity data** is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supplychain,etc.
 
-#### Emission factor
-An emission factor is a factor that converts activity data into GHG emissions data
-For example, how much  kg CO2 is emitted per liter of fuel consumed ,how much  kg CO2 is emitted for one kwh power consumption,  how much  kg CO2 emitted per kilograms of material produced, etc.
+Example :
+- How many liters of fuel consumed, 
+- How much electricity is consumed, 
+- How many kilograms of material purchased
+
+**Emission factor** is a factor that converts activity data into GHG emissions data.
+Example :
+- How much kg CO2 is emitted per liter of fuel consumed
+- How much kg CO2 is emitted for one kwh power consumption 
+- How much kg CO2 is emitted per kilograms of material produced
 
 In otherwords, emission factors helps organizations to calculate the emissions or co2 equivalent of Greenhouse gases which are emitted because of the activities performed by their business. 
-
-
 
 ## Who developes the Emissions Factors 
 
@@ -123,7 +125,7 @@ We have 3 examples below and we are using the same `Account` and `Data type`.
 - Data type - Electricity
 
 #### Example 1
-- Location -  NewYork, US
+- Location -  `NewYork, US`
 - Date of Activity - Oct,2023
 - Applied Factor - eGrid-2023
 - Effective from - Jan 2021
@@ -131,19 +133,19 @@ We have 3 examples below and we are using the same `Account` and `Data type`.
 <img src="images/Envizi-Electricity-NY_EMF-Details.png">    
 
 #### Example 2
-- Location -  London Center, UK
-- Date of Activity - Dec, 2022 
+- Location -  `London Center, UK`
+- Date of Activity - `Dec, 2022 `
 - Applied Factor - Managed DEFRA
 - Effective from - Jan 2022
 
 <img src="images/Envizi-Electricity-UK-Defra-2022.png">    
 
-Between example 1 and 2 the locations are diffent so emission factor applied based on the Location.
+Between example 1 and 2 the locations are different so the emission factor applied is based on the Location.
 
 #### Example 3
 
 - Location -  London Center, UK
-- Date of Activity - July, 2023
+- Date of Activity - `July, 2023`
 - Applied Factor - Managed DEFRA
 - Effective from - Jan 2023
 
@@ -152,14 +154,14 @@ Between example 1 and 2 the locations are diffent so emission factor applied bas
 - Between example 2 and 3 the `Locations` are same but `Date of Activity` is different. 
 - Being the locations are same `DEFRA` Emission factor is applied for both.
 - But versions of the `DEFRA` Emission factor is different because the `Date of Activity` is different.
-- For 2022 data, Envizi's FSA applied DEFRA-2022 because it is effective from Jan 2022-DeC 2022.
-- For 2023 data, new DEFRA factorset is applied which is effective from Jan 2023. 
+- For example 2, `DEFRA-2022` factorset is applied because it is effective from `Jan 2022 - Dec 2022`.
+- For example 3, `DEFRA-2023` factorset is applied which is effective from `Jan 2023`.
 - You can also look at Total CO2e and Facotor source values from the screenshot. 
 
 
 ### Factors publishing dates
 
-For keeping things easier and simpler, here we only talk about Factor Effective dates, not publishing dates. To learn more on effective and published date logic works together in Envizi, please refer https://knowledgebase.envizi.com/home/factor-published-date-logic
+For keeping things easier and simpler, so far we only talk about Factor Effective dates, not publishing dates. To learn more on effective and published date logic works together in Envizi, please refer https://knowledgebase.envizi.com/home/factor-published-date-logic
 
 
 ## How does these Emission Factor Sets are maintained in Envizi ?
