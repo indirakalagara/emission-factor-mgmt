@@ -1,15 +1,14 @@
 # Emission Factor Management in IBM Envizi
 
-## Objective
+## 1. Objective
 The objective of this article is to help understand how Envizi manages the Emission factors  
 
-## What are Emission Factors and why those are important
+## 2. What are Emission Factors and why those are important
 
 When Organization started their Sustainability journey, the very crucial thing is to start capturing the relavant data with respect to their operations to estimate / calculate the emissions. The captured data should be cleaned, normalized and then used to calculate the organization emissions. So to calculate emissions, two types of input data is required. 
 
 #### 1. Activity data
 Activity data is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supplychain,etc.
-
 Example :
 - How many liters of fuel consumed, 
 - How much electricity is consumed, 
@@ -24,7 +23,7 @@ Example :
 
 In otherwords, emission factors helps organizations to calculate the emissions or co2 equivalent of Greenhouse gases which are emitted because of the activities performed by their business. 
 
-## Who developes the Emissions Factors 
+## 3. Who developes the Emissions Factors 
 
 The Governments, environmental agencies, organizations, research insitutes publishes the emission factors for numerous activity based data,  based on the scientific studies and experiements conducted considering various parameters, conditions, states , regions , etc
 
@@ -43,7 +42,7 @@ Below are the some of the well known emission factor sets published by various o
 - ***Eora’s MRIO (Multi-region input-output)*** provides spend-based emission factor set across 66 industry sectors, which is gloabally recognized.  [more info](https://www.google.com/)
 
 
-## What are the Supported Emissions Factors in Envizi ?
+## 4. What are the Supported Emissions Factors in Envizi ?
 
 Envizi manages all publicly available emission factors which includes IEA, Eora66, US eGRID, UK Defra, NGRES, USEEIO
 
@@ -78,11 +77,11 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 </table>
 
 
-## How Emissions Factors are applied in Envizi ?
+## 5. How Emissions Factors are applied in Envizi ?
 
 As we learnt in the begining of the article, emissions are calculated for a given activity data  by applying the corresponding emission factor.  
 
-### Typical Emissions Factor selection process 
+### 5.1. Typical Emissions Factor selection process 
 
 Lets say, an organization in United States  purchases electricity from a electricity grid for their day to day operations. So here, `activity data = the electricity consumed` 
 
@@ -96,7 +95,7 @@ Typically below steps are followed :
 
 When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor. And also, the organization may have other crieterias to consider like whether to apply the factor based on factor publishing date or effective date. 
 
-### Factor Selection Algorithm in Envizi
+### 5.1.2 Factor Selection Algorithm in Envizi
 
 Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
 
@@ -114,11 +113,9 @@ Here is the pictorial representation of the same process.
 
 <img src="images/Envizi_FSA.png">   
 
-### Factor Selection Algorithm with Example
+### 5.1.3 Factor Selection Algorithm with Example
 
-Now, Lets look at how Emission factors are applied by Envizi for same account associated with different locations and date
-
-We have 3 examples below and we are using the same `Account` and `Data type`.
+Now, Lets look at how Emission factors are applied by Envizi. We have 3 examples below using the same `Account` and `Data type` but different `Location` and `Date`.
 - Account - ELEC_VEEE1697
 - Data type - Electricity
 
@@ -157,56 +154,62 @@ Between example 1 and 2 the locations are different so the emission factor appli
 - You can also look at Total CO2e and Facotor source values from the screenshot. 
 
 
-### Factors publishing dates
+### 5.1.4 Factors publishing dates
 
 For keeping things easier and simpler, so far we only talk about Factor Effective dates, not publishing dates. To learn more on effective and published date logic works together in Envizi, please refer https://knowledgebase.envizi.com/home/factor-published-date-logic
 
 
-## How does these Emission Factor Sets are maintained in Envizi ?
+## 6. How does these Emission Factor Sets are maintained in Envizi ?
 
 Envizi product team follow the below steps to ensure factor appropriateness and correctness.
 
-- most current and up-to-date factors are available in the system 
-- ensure the data integrity by conducting  regular audits and reviews. 
+- Most current and up-to-date factors are available in the system 
+- Ensure the data integrity by conducting  regular audits and reviews. 
 - Set review dates for all factors which will be updating frequently
-- make sure no factor conflicts arises as the factor sets are being updated
-- create special list of factors based on the organization request
-- conducts variance analysis on factors which helps to find the factors exists outside the thresholds of datatypes. 
+- Make sure no factor conflicts arises as the factor sets are being updated
+- Create special list of factors based on the organization request
+- Conducts variance analysis on factors which helps to find the factors exists outside the thresholds of datatypes. 
 
-  
 
-# Custom Emission Factors
+## 7. Custom Emission Factors
 
 Envizi provides the standard set of emission factors with the platform. However, if your organization have defined custom emission factors, Envizi allows you to create the same in the platform. Once created, these custom factors are selected in preference to Envizi's default set of managed factors.
 
-To create new Custom Factor in Envizi, navigate to  Admin -> Configuration -> Custom Factors. 
+### 7.1. Create new Custom Factor 
+
+To create new Custom Factor in Envizi, navigate to  `Admin -> Configuration -> Custom Factors` . 
+
 Provide the inputs for the below parameters.
-- Region : Provide the City / state / region for which the Cusom factor should be applied
-- Data Type : Chose the data type from the list
-- Factor Set : Go with default. Nothing to update
-- Name : Provide a unique name to represent the custom factor
-- Total CO2e : Provide the emissions in CO2e 
-- Effective from : Date from when this custom factor is applied
-- Effective to : End date for the custom factor to be applied
+- **Region** : Provide the City / state / region for which the Cusom factor should be applied
+- **Data Type** : Choose the data type from the list
+- **Factor Set** : Go with default. Nothing to update
+- **Name** : Provide a unique name to represent the custom factor
+- **Total CO2e** : Provide the emissions in CO2e 
+- **Effective from** : Date from when this custom factor is applied
+- **Effective to** : End date for the custom factor to be applied
 
 <img src="images/Envizi-CF-Create-new.png">    
 
+### 7.2. View the new Custom Factor 
 
-Once created, you can view the Custom Emission Factors from the same page as Admin -> Configuration -> Custom Factors. 
+Once created, you can view the Custom Emission Factors from the same page as `Admin -> Configuration -> Custom Factors`. 
     
-Here is example of custom factors created in the system. In the below screenshot, you can see  custom factors created for each month for the same region and data type.
+Here is example of custom factors created in the system. In the below screenshot, you can see custom factors created for each month for the same region and data type.
 
 <img src="images/Envizi-CF-list.png">    
 
+Now, lets have a look at how these factors applied in Envizi. The custom factor would be applied to an account with the following.
+- Data type : Natural Gas 
+- Location : New South Wales, Australia.   
 
-Now, lets have a look at how these factors applied in Envizi. The custom factor would be applied to an Account with data type : Natural Gas associaed with the Location : New South Wales, Australia.   
+### 7.3. Custom Factor Exmaples
 
-Below is the screenshot of the account's monthly data summary.   For the Month of March22, the custom factor set NSW_NG_Custom Factor-March22 is applied. You can also note the effective dates.
+Below is the screenshot of the account's monthly data summary. For the Month of `March22`, the custom factor set `NSW_NG_Custom Factor-March22` is applied. You can also note the effective dates.
 
 <img src="images/Envizi-CF-NSW-March22.png">  
 
-Next, look at another montly data record, where you can see a different custom factor is applied. 
-Envizi-CF-NSW-March22
+Next, look at another montly data record, where you can see a different custom factor is applied
+`Envizi-CF-NSW-April22`
 
 <img src="images/Envizi-CF-NSW-April22.png">  
 
