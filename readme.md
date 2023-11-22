@@ -194,7 +194,7 @@ Provide the inputs for the below parameters.
 
 Once created, you can view the Custom Emission Factors from the same page as `Admin -> Configuration -> Custom Factors`. 
     
-Here is example of custom factors created in the system. In the below screenshot, you can see custom factors created for each month for the same region and data type.
+Here is example of custom factors created in the system. In the below screenshot, you can see custom factors created for each `month` for the same `region` and `data type`.
 
 <img src="images/Envizi-CF-list.png">    
 
@@ -202,18 +202,18 @@ Now, lets have a look at how these factors applied in Envizi. The custom factor 
 - Data type : Natural Gas 
 - Location : New South Wales, Australia.   
 
-### 7.3. Custom Factor Exmaples
+### 7.3. Custom Factor Examples
 
 Below is the screenshot of the account's monthly data summary. For the Month of `March22`, the custom factor set `NSW_NG_Custom Factor-March22` is applied. You can also note the effective dates.
 
 <img src="images/Envizi-CF-NSW-March22.png">  
 
-Next, look at another montly data record, where you can see a different custom factor is applied
+Next, look at another monthly data record, where you can see a different custom factor is applied
 `Envizi-CF-NSW-April22`
 
 <img src="images/Envizi-CF-NSW-April22.png">  
 
 
-## Summary
+## 8. Summary
     
 In this artilce, we have discussed about the emission factors, what are the well known emission factor sets available in public. We have also learnt the how envizi uses Factor selection algorithm (FSA) to find the approproate emission factor, how those factors are managed and maintained by product team. Lastly, we have learnt how an organization can create the custom emission factors in Envizi. 
