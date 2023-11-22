@@ -51,21 +51,19 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 #### Factor Set
 <table>
     <tr>
-        <th width="5%">Region Type</th>
-        <th width="5%">Region</th>
         <th width="15%">Managed Factor Set</th>
-        <th width="20%">Coverage </th>
-        <th width="20%">Data types / Scopes </th>
+        <th width="25%">Coverage </th>
+        <th width="25%">Data types / Scopes </th>
         <th width="35%">Details </th>        
     </tr>
     <tr>
-        <td>Global</td>
-        <td>Global</td>
         <td>
 
 [IEA](https://knowledgebase.envizi.com/home/managed-emission-factors-iea)
         </td>
         <td>
+            <li>Applies Global
+            </li>
             <li>Applies Majority of the countries where managed Emission factors are not available in Envizi
             </li>
             <li>
@@ -88,8 +86,6 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
         </td>
     </tr>   
     <tr>
-        <td>Global</td>
-        <td>Global</td>
         <td>
 
 [Eora66 - MRIO
@@ -112,7 +108,88 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
             <li>IBM Envizi has modified Eora concordance tables to align with Summary categories provided by the US EPA providing coverage of 66 industries / commodities.</li>  
         </td>
     </tr>   
+    <tr>
+        <td>
+
+[US eGRID - Electricity factors
+](https://knowledgebase.envizi.com/home/managed-emission-factors-us-egrid-electricity-fact)
+        </td>
+        <td>
+            <li>US only (including Puerto Rico))
+            </li>
+            <li>
+            location based
+           </li>
+        </td>
+        <td>
+            <li>Scope2 electricity and electricity green offset</li>
+            <li>Scope3 ectricity</li>            
+        </td>
+        <td>
+            <li>US EPA (Environmental Protection Agency) publishes eGRID database </li>            
+            <li>Envizi has managed this factor set since 2008 </li>                        
+        </td>
+    </tr>   
+    <tr>
+        <td>
+
+[UK Defra
+](https://knowledgebase.envizi.com/home/managed-emission-factors-defra)
+        </td>
+        <td>
+            <li>Applies to Europe for Scope1 & Scope 2 - Location based            
+           </li>
+            </li>Global - Air travel and some other Scope 3 factors.
+            <li>
+        </td>
+        <td>
+            <li>Scope 1: fossil fuels, biofuels, refrigerants, passenger and delivery vehicles (distance based)
+</li>
+            <li>Scope 2: UK electricity, UK electricity for electric vehicles, heat and steam</li>            
+            <li>Scope 3: upstream and downstream emissions resulting from Scope 1 and 2 emission sources and… for more info refer factor page
+</li>                        
+        </td>
+        <td>
+            <li>Publisher: UK Government and the Department for the Environment, Food and Rural Affairs (DEFRA)  </li>            
+            <li>Envizi has managed this factor set since 2009 </li>                        
+            <li>Applies mainly to the United Kingdom but many organizations have chosen to apply this factor set across their European sites, particularly with emissions resulting from air travel.
+ </li>                                    
+        </td>
+    </tr>     
+    <tr>
+        <td>
+
+[Residual Mix Emission Factors, Green-e
+](https://knowledgebase.envizi.com/home/managed-emission-factors-green-e-residual-mix)
+        </td>
+        <td>
+            <li> Applies to US eGrid regions           
+           </li>
+            </li>Market-based
+            <li>
+        </td>
+        <td>
+            <li>apply only to Scope 2 Market-based electricity
+
+</li>
+        </td>
+        <td>
+            <li>Publisher: Green-e  </li>  
+            <li>represents US residual mix factors </li>                        
+            <li>Envizi has managed this factor set since 2009 </li>                        
+            <li>Applies mainly to the United Kingdom but many organizations have chosen to apply this factor set across their European sites, particularly with emissions resulting from air travel.
+ </li>                                    
+        </td>
+    </tr>           
 </table>
+
+
+
+
+
+Can only be used in the  Envizi’s Market-based Emissions power report.
+Managed since 2015
+
 
 
 ## 5. How Emissions Factors are applied in Envizi ?
