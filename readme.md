@@ -5,20 +5,18 @@ The objective of this article is to help understand how Envizi manages the Emiss
 
 ## What are Emission Factors and why those are important
 
-When Organization started their Sustainability journey, the very crucial thing is to start capturing the relavant data with respect to their operations to estimate / calculate the emissions. The captured data should be cleaned, normalized and then used to calculate the organization emissions. 
+When Organization started their Sustainability journey, the very crucial thing is to start capturing the relavant data with respect to their operations to estimate / calculate the emissions. The captured data should be cleaned, normalized and then used to calculate the organization emissions. So to calculate emissions, two types of input data is required. 
 
-So to calculate emissions,  two types of input data is required. 
-- activity data 
-- emission factors
-
-**Activity data** is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supplychain,etc.
+#### 1. Activity data
+Activity data is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supplychain,etc.
 
 Example :
 - How many liters of fuel consumed, 
 - How much electricity is consumed, 
 - How many kilograms of material purchased
 
-**Emission factor** is a factor that converts activity data into GHG emissions data.
+#### 2. Emission factor
+An Emission factor is a factor that converts activity data into GHG emissions data.
 Example :
 - How much kg CO2 is emitted per liter of fuel consumed
 - How much kg CO2 is emitted for one kwh power consumption 
