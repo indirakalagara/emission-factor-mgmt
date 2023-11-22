@@ -51,28 +51,66 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 #### Factor Set
 <table>
     <tr>
-        <th width="20%">Region Type</th>
-        <th width="20%">Region</th>
-        <th width="15%">Factor Set</th>
-        <th width="25%">Supported Activities</th>
+        <th width="5%">Region Type</th>
+        <th width="5%">Region</th>
+        <th width="15%">Managed Factor Set</th>
+        <th width="20%">Coverage </th>
+        <th width="20%">Data types / Scopes </th>
+        <th width="35%">Details </th>        
     </tr>
     <tr>
         <td>Global</td>
         <td>Global</td>
         <td>
 
-[IEA...](https://knowledgebase.envizi.com/home/managed-emission-factors-iea)
+[IEA](https://knowledgebase.envizi.com/home/managed-emission-factors-iea)
         </td>
-        <td>Scope 1 2</td>
+        <td>
+            <li>Applies Majority of the countries where managed Emission factors are not available in Envizi
+            </li>
+            <li>
+            Location based
+           </li>
+        </td>
+        <td>
+            <li>Scope 2: electricity and electricity green offset</li>
+            <li>Scope 3: electricity</li>
+        </td>
+        <td>
+            <li>Publisher: The International Energy Agency</li>            
+            <li>Licensed version</li>                        
+            <li>Envizi has managed this factor set since 2013. </li>
+            <li>Part of Envizi’s Default factor set</li>                        
+            <li>Use only for in-house reporting, and must NOT be distributed or used outside of Envizi
+            </li>
+            <li>Review the factors using report - Emission and Energy Factors - PDF Version
+            </li>
+        </td>
     </tr>   
     <tr>
-        <td>Global2</td>
-        <td>Global2</td>
+        <td>Global</td>
+        <td>Global</td>
         <td>
 
-[IEA...1111](https://knowledgebase.envizi.com/home/managed-emission-factors-iea)
+[Eora66 - MRIO
+](https://knowledgebase.envizi.com/home/managed-emission-factors-eora-mrio-multi-region-in)
         </td>
-        <td>Scope 1 22222</td>
+        <td>
+            <li>Applies to Global – 188 Countries
+            </li>
+            <li>
+            Scope 3 
+           </li>
+        </td>
+        <td>
+            <li>Scope 3 spend-based factor set covers 66 summary data types and relates to the US EEIO Summary classification.
+</li>
+        </td>
+        <td>
+            <li>Eora’s MRIO (Multi-region input-output) is a globally recognized spend-based emission factor set</li>            
+            <li>Envizi managing this factor from June 2023</li>                        
+            <li>IBM Envizi has modified Eora concordance tables to align with Summary categories provided by the US EPA providing coverage of 66 industries / commodities.</li>  
+        </td>
     </tr>   
 </table>
 
