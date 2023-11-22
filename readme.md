@@ -12,7 +12,6 @@ So to calculate emissions,  two types of input data is required.
 - emission factors
 
 #### Activity data
-
 Activity data is a quantitative measure of a level of activity that results in GHG emissions. 
 This is the data the organization captures from their operations / supplychain,etc 
 For example, how may liters of fuel consumed, how much electricity is consumed, how many kilograms of material purchased , etc
@@ -27,7 +26,7 @@ In otherwords, emission factors helps organizations to calculate the emissions o
 
 ## Who developes the Emissions Factors 
 
-The Governments, environmental agencies, organizations, research insitutes publishes the emission factors for numerous activity based data,  based on the scientific studies and experiements conducted considering various parameters, conditions, states , regions , etc [more info](https://www.google.com/)
+The Governments, environmental agencies, organizations, research insitutes publishes the emission factors for numerous activity based data,  based on the scientific studies and experiements conducted considering various parameters, conditions, states , regions , etc
 
 Below are the some of the well known emission factor sets published by various organizations and countries. 
 
@@ -52,12 +51,12 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 
 #### Factor Set
 <table>
-    <th>
-        <td width="20%">Region Type</td>
-        <td width="20%">Region</td>
-        <td width="15%">Factor Set</td>
-        <td width="25%">Supported Activities</td>
-    </th>
+    <tr>
+        <th width="20%">Region Type</th>
+        <th width="20%">Region</th>
+        <th width="15%">Factor Set</th>
+        <th width="25%">Supported Activities</th>
+    </tr>
     <tr>
         <td>Global</td>
         <td>Global</td>
@@ -83,7 +82,7 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 
 As we learnt in the begining of the article, emissions are calculated for a given activity data  by applying the corresponding emission factor.  
 
-#### Emissions Factor selection process 
+### Emissions Factor selection process 
 
 Lets say, an Organization in United States  purchases electricity from a electricity grid for their day to day operations.  
     So here, activity data = the electricity consumed  
@@ -98,7 +97,7 @@ Typically below steps are followed :
 
 When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor. And also, the organization may have other crieterias to consider like whether to apply the factor based on factor publishing date or effective date. 
 
-#### Factor Selection Algorithm in Envizi
+### Factor Selection Algorithm in Envizi
 
 This is where Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
 
@@ -106,13 +105,13 @@ How does the Factor Set Algorithm (FSA) works ?
 
 Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA) , which basically filerts through the all available factors based on the following  five criterias: 
     
-- Data type                      - type of activity data - Electricity, Natural Gas, etc.
-- Sub type                       - Sub categorization similar to data type to link factors to accounts
-- Factor Set                     - Collection of emission factors 
-- Region                         - the region where the emission factor is applicable. 4 levels are considered (city, state, country, global)
-- Effective and Published Dates – organizations can apply factors by effective or published dates, depending on preference
+- Data type : type of activity data - Electricity, Natural Gas, etc.
+- Sub type : Sub categorization similar to data type to link factors to accounts
+- Factor Set : Collection of emission factors 
+- Region : the region where the emission factor is applicable. 4 levels are considered (city, state, country, global)
+- Effective and Published Dates : organizations can apply factors by effective or published dates, depending on preference
 
-#### Factor Selection Algorithm with Example
+### Factor Selection Algorithm with Example
 
 FSA is a 5 step process which goes as below. 
 
@@ -164,13 +163,13 @@ Envizi provides the standard set of emission factors with the platform. However,
 
 To create new Custom Factor in Envizi, navigate to  Admin -> Configuration -> Custom Factors. 
 Provide the inputs for the below parameters.
-- Region            - provide the City / state / region for which the Cusom factor should be applied
-- Data Type         - Chose the data type from the list
-- Factor Set        - Go with default. Nothing to update
-- Name              - Provide a unique name to represent the custom factor
-- Total CO2e        - Provide the emissions in CO2e 
-- Effective from    - Date from when this custom factor is applied
-- Effective to      - End date for the custom factor to be applied
+- Region : Provide the City / state / region for which the Cusom factor should be applied
+- Data Type : Chose the data type from the list
+- Factor Set : Go with default. Nothing to update
+- Name : Provide a unique name to represent the custom factor
+- Total CO2e : Provide the emissions in CO2e 
+- Effective from : Date from when this custom factor is applied
+- Effective to : End date for the custom factor to be applied
 
 <img src="images/Envizi-CF-Create-new.png">    
 
