@@ -82,12 +82,11 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
 
 As we learnt in the begining of the article, emissions are calculated for a given activity data  by applying the corresponding emission factor.  
 
-### Emissions Factor selection process 
+### Typical Emissions Factor selection process 
 
-Lets say, an Organization in United States  purchases electricity from a electricity grid for their day to day operations.  
-    So here, activity data = the electricity consumed  
+Lets say, an organization in United States  purchases electricity from a electricity grid for their day to day operations. So here, `activity data = the electricity consumed` 
 
-Now, how do we find which emission factor to apply on  this activity data(consumed electricity) to calculate the emissions  ??
+Now, how do we find which emission factor to apply on  this activity data(consumed electricity) to calculate the emissions?
 
 Typically below steps are followed :
 
@@ -99,47 +98,66 @@ When the organization has operations spread across multiple regions / continents
 
 ### Factor Selection Algorithm in Envizi
 
-This is where Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
+Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
 
-How does the Factor Set Algorithm (FSA) works ? 
+How does the Factor Set Algorithm (FSA) works? 
 
-Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA) , which basically filerts through the all available factors based on the following  five criterias: 
+Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA), which basically filerts through the all available factors based on the following  five criterias: 
     
-- Data type : type of activity data - Electricity, Natural Gas, etc.
-- Sub type : Sub categorization similar to data type to link factors to accounts
-- Factor Set : Collection of emission factors 
-- Region : the region where the emission factor is applicable. 4 levels are considered (city, state, country, global)
-- Effective and Published Dates : organizations can apply factors by effective or published dates, depending on preference
+- **Data type** : The type of activity data such as Electricity, Natural Gas, etc.
+- **Sub type** : Sub categorization similar to data type to link factors to accounts
+- **Factor Set** : Collection of emission factors 
+- **Region** : The region where the emission factor is applicable. 4 levels are considered (city, state, country, global)
+- **Effective and Published Dates**: Organizations can apply factors by effective or published dates, depending on preference
 
-### Factor Selection Algorithm with Example
-
-FSA is a 5 step process which goes as below. 
+Here is the pictorial representation of the same process.
 
 <img src="images/Envizi_FSA.png">   
 
+### Factor Selection Algorithm with Example
 
-Now, Lets look at Emission factors applied by Envizi for various accounts associated with different locations
+Now, Lets look at how Emission factors are applied by Envizi for same account associated with different locations and date
 
-Example Account: ELEC_VEEE1697
-Location -  NewYork, US , Data type - Electricity, Date of Activity data - Oct,2023
-Applied Factor - eGrid-2023 , Effective from - Jan 2021
+We have 3 examples below and we are using the same `Account` and `Data type`.
+- Account - ELEC_VEEE1697
+- Data type - Electricity
+
+#### Example 1
+- Location -  NewYork, US
+- Date of Activity - Oct,2023
+- Applied Factor - eGrid-2023
+- Effective from - Jan 2021
 
 <img src="images/Envizi-Electricity-NY_EMF-Details.png">    
 
-
-Example Account: ELEC_VEEE1697
-Location -  London Center, UK , Data type - Electricity, Date of Activity data -Dec, 2022 
-Applied Factor - DEFRA-2022, Effective from - Jan 2021
+#### Example 2
+- Location -  London Center, UK
+- Date of Activity - Dec, 2022 
+- Applied Factor - Managed DEFRA
+- Effective from - Jan 2022
 
 <img src="images/Envizi-Electricity-UK-Defra-2022.png">    
 
+Between example 1 and 2 the locations are diffent so emission factor applied based on the Location.
 
-For the same Account: ELEC_VEEE1697, observe the emission factor applied for a different period of activity data
+#### Example 3
+
+- Location -  London Center, UK
+- Date of Activity - July, 2023
+- Applied Factor - Managed DEFRA
+- Effective from - Jan 2023
 
 <img src="images/Envizi-Electricity-UK-Defra-2023.png">    
 
+- Between example 2 and 3 the `Locations` are same but `Date of Activity` is different. 
+- Being the locations are same `DEFRA` Emission factor is applied for both.
+- But versions of the `DEFRA` Emission factor is different because the `Date of Activity` is different.
+- For 2022 data, Envizi's FSA applied DEFRA-2022 because it is effective from Jan 2022-DeC 2022.
+- For 2023 data, new DEFRA factorset is applied which is effective from Jan 2023. 
+- You can also look at Total CO2e and Facotor source values from the screenshot. 
 
-Take a close look at screenshots 4 & 5, although DEFRA Emission factor set applied, both are different versions.  For 2022 data, Envizi's FSA applied DEFRA-2022 because it is effective from Jan 2022-DeC 2022.  For 2023 data, new DEFRA factorset is applied which is effective from Jan 2023. You can also look at Total CO2e and Facotor source values from the screenshot. 
+
+### Factors publishing dates
 
 For keeping things easier and simpler, here we only talk about Factor Effective dates, not publishing dates. To learn more on effective and published date logic works together in Envizi, please refer https://knowledgebase.envizi.com/home/factor-published-date-logic
 
