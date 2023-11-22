@@ -44,13 +44,12 @@ Below are the some of the well known emission factor sets published by various o
 
 ## 4. What are the Supported Emissions Factors in Envizi ?
 
-Envizi manages all publicly available emission factors which includes IEA, Eora66, US eGRID, UK Defra, NGRES, USEEIO
+Envizi supports emissions calculation for all Scope 1, Scope 2 and Scope 3 activity data. Eniviz maintains a emission factor library which contains all the publicly available emission factor sets as well as licensed factor sets, covering Scope 1, Scope 2 (both Location based and Market based) and Scope 3 (all categories supporting Spend-based / average data / supplier specific )
 
-As of date Nov 2023,  below are the Emission factors managed by Envizi
-
+The managed emission factor sets includes the publicly available emission factors such as IEA, US eGRID, UK Defra, NGRES, Residual Mix Green-e, Residual Mix AIB, Eora66, USEEIO,NGRES + NGA, New Zeland Factor set, etc.  Below table provides the list of Manged Emisison factors in Envizi as of date Nov 2023 with more details.
 #### Factor Set
 <table>
-    <tr>
+<tr>
         <th width="15%">Managed Factor Set</th>
         <th width="25%">Coverage </th>
         <th width="25%">Data types / Scopes </th>
@@ -75,10 +74,11 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
             <li>Scope 3: electricity</li>
         </td>
         <td>
-            <li>Publisher: The International Energy Agency</li>            
-            <li>Licensed version</li>                        
+            <li>Publisher: 
+[The International Energy Agency](https://www.iea.org/data-and-statistics/data-sets) </li>
+            <li>Licensed version</li>
             <li>Envizi has managed this factor set since 2013. </li>
-            <li>Part of Envizi’s Default factor set</li>                        
+            <li>Part of Envizi’s Default factor set</li>
             <li>Use only for in-house reporting, and must NOT be distributed or used outside of Envizi
             </li>
             <li>Review the factors using report - Emission and Energy Factors - PDF Version
@@ -88,31 +88,27 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
     <tr>
         <td>
 
-[Eora66 - MRIO
-](https://knowledgebase.envizi.com/home/managed-emission-factors-eora-mrio-multi-region-in)
+[Eora66 - MRIO](https://knowledgebase.envizi.com/home/managed-emission-factors-eora-mrio-multi-region-in)
         </td>
         <td>
-            <li>Applies to Global – 188 Countries
-            </li>
-            <li>
-            Scope 3 
-           </li>
+            <li>Applies to Global – 188 Countries</li>
+            <li>Scope 3 </li>
         </td>
         <td>
-            <li>Scope 3 spend-based factor set covers 66 summary data types and relates to the US EEIO Summary classification.
+            <li>Scope 3: Spend-based factor set covers 66 summary data types and relates to the US EEIO Summary classification</li>
+        </td>
+        <td>
+        <li>
+[Eora’s MRIO (Multi-region input-output)](https://worldmrio.com/)is a globally recognized spend-based emission factor set
 </li>
-        </td>
-        <td>
-            <li>Eora’s MRIO (Multi-region input-output) is a globally recognized spend-based emission factor set</li>            
-            <li>Envizi managing this factor from June 2023</li>                        
-            <li>IBM Envizi has modified Eora concordance tables to align with Summary categories provided by the US EPA providing coverage of 66 industries / commodities.</li>  
+    <li>Envizi managing this factor from June 2023</li>
+    <li>IBM Envizi has modified Eora concordance tables to align with Summary categories provided by the US EPA providing coverage of 66 industries / commodities.</li>
         </td>
     </tr>   
     <tr>
-        <td>
+<td>
 
-[US eGRID - Electricity factors
-](https://knowledgebase.envizi.com/home/managed-emission-factors-us-egrid-electricity-fact)
+[US eGRID - Electricity factors](https://knowledgebase.envizi.com/home/managed-emission-factors-us-egrid-electricity-fact)
         </td>
         <td>
             <li>US only (including Puerto Rico))
@@ -122,73 +118,173 @@ As of date Nov 2023,  below are the Emission factors managed by Envizi
            </li>
         </td>
         <td>
-            <li>Scope2 electricity and electricity green offset</li>
-            <li>Scope3 ectricity</li>            
+            <li>Scope 2: electricity and electricity green offset</li>
+            <li>Scope 3: ectricity</li>            
         </td>
         <td>
-            <li>US EPA (Environmental Protection Agency) publishes eGRID database </li>            
+            <li>Publisher: 
+[US EPA (Environmental Protection Agency)](https://www.epa.gov/egrid) publishes eGRID database </li>
             <li>Envizi has managed this factor set since 2008 </li>                        
         </td>
     </tr>   
     <tr>
         <td>
-
-[UK Defra
-](https://knowledgebase.envizi.com/home/managed-emission-factors-defra)
+[UK Defra](https://knowledgebase.envizi.com/home/managed-emission-factors-defra)
         </td>
         <td>
-            <li>Applies to Europe for Scope1 & Scope 2 - Location based            
+            <li>Applies to Europe for Scope 1  & Scope 2 - Location based            
            </li>
-            </li>Global - Air travel and some other Scope 3 factors.
-            <li>
+            <li>Global - Air travel and some other Scope 3 factors
+            </li>
         </td>
         <td>
-            <li>Scope 1: fossil fuels, biofuels, refrigerants, passenger and delivery vehicles (distance based)
-</li>
-            <li>Scope 2: UK electricity, UK electricity for electric vehicles, heat and steam</li>            
-            <li>Scope 3: upstream and downstream emissions resulting from Scope 1 and 2 emission sources and… for more info refer factor page
-</li>                        
+            <li>Scope 1: fossil fuels, biofuels, refrigerants, passenger and delivery vehicles (distance based)</li>
+            <li>Scope 2: UK electricity, UK electricity for electric vehicles, heat and steam</li>
+            <li>Scope 3: upstream and downstream emissions resulting from Scope 1 and 2 emission sources and… for more info refer factor page</li>
         </td>
         <td>
-            <li>Publisher: UK Government and the Department for the Environment, Food and Rural Affairs (DEFRA)  </li>            
-            <li>Envizi has managed this factor set since 2009 </li>                        
-            <li>Applies mainly to the United Kingdom but many organizations have chosen to apply this factor set across their European sites, particularly with emissions resulting from air travel.
- </li>                                    
+            <li>Publisher:
+[UK Government and the Department for the Environment, Food and Rural Affairs (DEFRA)](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting)</li>
+            <li>Envizi has managed this factor set since 2009 </li>
+            <li>Applies mainly to the United Kingdom but many organizations have chosen to apply this factor set across their European sites, particularly with emissions resulting from air travel.</li>
         </td>
     </tr>     
     <tr>
+    <td>
+[Residual Mix Emission Factors, Green-e](https://knowledgebase.envizi.com/home/managed-emission-factors-green-e-residual-mix)
+        </td>
+        <td>
+            <li>Applies to US eGrid regions           
+           </li>
+            <li>Market-based
+            </li>
+        </td>
+        <td>
+            <li>Scope 2: Market-based electricity
+        </li>
+        </td>
+        <td>
+            <li>Publisher:
+[Green-e](https://www.green-e.org/news)  </li>
+            <li>represents US residual mix factors </li>
+            <li>Envizi has managed this factor set since 2015 </li>
+            <li>Can only be used in the  Envizi’s Market-based Emissions power report.</li>
+        </td>
+    </tr>
+    <tr>
+        <td>
+[Residual Mix Emission Factors, AIB](https://knowledgebase.envizi.com/home/managed-emission-factors-aib-residual-mix-eu)
+        </td>
+        <td>
+            <li> Australia           
+           </li>
+            <li>Market-based
+            </li>
+        </td>
+        <td>
+            <li>Scope 2 Market-based electricity</li>
+        </td>
+        <td>
+            <li>Publisher: [Association of Issuing Bodies (AIB)](https://www.aib-net.org/facts/european-residual-mix)</li>
+            <li>represents most EU countries' residual mix factors </li>
+            <li>Envizi has managed this factor set since 2015 </li>
+            <li>Can only be used in the  Envizi’s Market-based Emissions power report</li>
+        </td>
+    </tr>  
+    <tr>
         <td>
 
-[Residual Mix Emission Factors, Green-e
-](https://knowledgebase.envizi.com/home/managed-emission-factors-green-e-residual-mix)
+[NGERS & National Greenhouse Accounts](https://knowledgebase.envizi.com/home/managed-emission-factors-aib-residual-mix-eu)
         </td>
         <td>
-            <li> Applies to US eGrid regions           
+            <li> Applies at the country level for participating EU countries</li>
+            <li>Market-based</li>
+        </td>
+        <td>
+            <li>Scope 1: fossil fuels, biofuels, refrigerants</li>
+            <li>Scope 2: Australian electricity</li>
+            <li>Scope 3: upstream and downstream emissions resulting from Scope 1 and 2 emission sources, waste (very broad categories,  well-to-tank (upstream and downstream) emissions from Scope 3 activities </li>                        
+        </td>
+        <td>
+            <li>Publisher: Australian Government. 2 factor sets </li>
+            <li> 1) Scope 1, 2 Factors for [National Greenhouse and Energy Reporting (NGER) Act](https://www.legislation.gov.au/Series/F2008L02309) </li>
+            <li> 2) Scope 3 indirect emission factors for [National Greenhouse Accounts (NGA)](https://www.industry.gov.au/data-and-publications/national-greenhouse-accounts-factors) </li>
+            <li>Envizi has managed this factor set since 2009</li>
+            <li>Envizi managed factor set is a combination of the direct factors from NGER and the indirect factors from the NGA workbooks</li>
+            <li>NGER factors have specific reporting labels which assist in aligning Envizi’s NGER report outputs to match the input requirements for NGER reporters</li>
+        </td>
+    </tr>                    
+    <tr>
+        <td>
+[New Zealand - Ministry for the Env.](https://knowledgebase.envizi.com/home/managed-emission-factors-new-zealand-ministry-for-)
+        </td>
+        <td>
+            <li> New Zealand only
            </li>
-            </li>Market-based
-            <li>
+            <li>Market-based
+            </li>
         </td>
         <td>
-            <li>apply only to Scope 2 Market-based electricity
+            <li>Scope 1: fossil fuels, biofuels, refrigerants, passenger and delivery vehicles (distance based)</li>
+            <li>Scope 2: NZ electricity : The yearly average figures provided are used in Envizi</li>
+            <li>Scope 3: pstream and downstream emissions resulting from Scope 1 and 2 emission sources, working from home measured in employee/day, travel by vehicle size and distance, freight in tonne.km, water supply and waste water,waste,materials, agriculture and forestry </li>                        
+        </td>
+        <td>
+            <li>Publisher: [New Zealand Ministry for the Environment](https://environment.govt.nz/publications/measuring-emissions-a-guide-for-organisations-2023-emission-factors-summary/) </li>
+            <li> Envizi has managed this factor set since 2009 </li>
 
 </li>
         </td>
+    </tr>
+    <tr>
         <td>
-            <li>Publisher: Green-e  </li>  
-            <li>represents US residual mix factors </li>                        
-            <li>Envizi has managed this factor set since 2009 </li>                        
-            <li>Applies mainly to the United Kingdom but many organizations have chosen to apply this factor set across their European sites, particularly with emissions resulting from air travel.
- </li>                                    
+
+[USEEIO Emission Factors](https://knowledgebase.envizi.com/home/managed-emission-factors-supply-chain-greenhouse-g)
         </td>
-    </tr>           
+        <td>
+            <li>USA only only
+           </li>
+        </td>
+        <td>
+            <li>Scope 3: Spend-based emission factors covering 394 commodities and 66 summary data types</li>
+        </td>
+        <td>
+            <li>Publisher: [US EPA Supplychain GHG Emission factors for US Industries and Commodities](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=349324&Lab=CESER) </li>
+            <li>Envizi has managed this factor set since 2021</li>
+            <li>factor set is managed using both raw figures with 2018 USD, and an inflation adjusted version</li>
+</li>
+        </td>
+    </tr>     
+    <tr>
+        <td>US Climate Leaders
+        </td>
+        <td>
+            <li>Applies to North America
+           </li>
+        </td>
+        <td>
+        </td>
+        <td>
+</li>
+        </td>
+    </tr>   
+    <tr>
+        <td>
+
+Canada - National Inventory Factors
+        </td>
+        <td>
+            <li>Canada
+           </li>
+        </td>
+        <td>           
+        </td>
+        <td>
+</li>
+        </td>
+    </tr>                    
 </table>
 
-
-
-
-
-Can only be used in the  Envizi’s Market-based Emissions power report.
-Managed since 2015
 
 
 
@@ -208,13 +304,10 @@ Typically below steps are followed :
 2. If not,  look for available emission factors published for the regions, country, continent and global in sequence. 
     <img src="images/EM_Highlevel.png">    
 
-When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor. And also, the organization may have other crieterias to consider like whether to apply the factor based on factor publishing date or effective date. 
+Apart from what we see in the above diagram,  the organization may have other crieterias to consider like chosing custom factors or standard factors, factor publishing date or effective date,etc. 
+When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor with so many crieterias to align with. That's when Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
 
-### 5.1.2 Factor Selection Algorithm in Envizi
-
-Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
-
-How does the Factor Set Algorithm (FSA) works? 
+### 5.1.2 How does the Factor selection works in Envizi? 
 
 Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA), which basically filerts through the all available factors based on the following  five criterias: 
     
@@ -331,4 +424,4 @@ Next, look at another monthly data record, where you can see a different custom 
 
 ## 8. Summary
     
-In this artilce, we have discussed about the emission factors, what are the well known emission factor sets available in public. We have also learnt the how envizi uses Factor selection algorithm (FSA) to find the approproate emission factor, how those factors are managed and maintained by product team. Lastly, we have learnt how an organization can create the custom emission factors in Envizi. 
+In this artilce, we have discussed about the emission factors, what are the well known emission factor sets available in public. We have also learnt how envizi uses Factor selection algorithm (FSA) to find the approproate emission factor, how those factors are managed and maintained  in Envizi. Lastly, we have learnt how Envizi supports organizations to create their own custom emission factors and apply the same for their activity data.
