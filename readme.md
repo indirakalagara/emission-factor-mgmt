@@ -46,7 +46,7 @@ Below are the some of the well known emission factor sets published by various o
 
 Envizi supports emissions calculation for all Scope 1, Scope 2 and Scope 3 activity data. Eniviz maintains a emission factor library which contains all the publicly available emission factor sets as well as licensed factor sets, covering Scope 1, Scope 2 (both Location based and Market based) and Scope 3 (all categories supporting Spend-based / average data / supplier specific )
 
-The managed emission factor sets includes the publicly available emission factors such as IEA, US eGRID, UK Defra, NGRES, Residual Mix Green-e, Residual Mix AIB, Eora66, USEEIO,NGRES + NGA, New Zeland Factor set, etc.  Below table provides the list of Manged Emisison factors in Envizi as of date Nov 2023 with more details.
+The managed emission factor sets includes the publicly available emission factors such as IEA, US eGRID, UK Defra, NGRES, Residual Mix Green-e, Residual Mix AIB, Eora66, USEEIO,NGRES + NGA, New Zeland Factor set, etc.  Below table provides the list of Manged Emisison factors in Envizi as of date Nov 2023 with more details.  Please refer [Envizi knowledge base](https://knowledgebase.envizi.com/home/managed-emission-factors) for latest updates.
 #### Factor Set
 <table>
 <tr>
