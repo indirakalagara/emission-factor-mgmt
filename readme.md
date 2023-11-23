@@ -5,33 +5,33 @@ The objective of this article is to help understand how Envizi manages the Emiss
 
 ## 2. What are Emission Factors and why those are important
 
-When Organization started their Sustainability journey, the very crucial thing is to start capturing the relavant data with respect to their operations to estimate / calculate the emissions. The captured data should be cleaned, normalized and then used to calculate the organization emissions. So to calculate emissions, two types of input data is required. 
+When Organization started their Sustainability journey, the very crucial thing is to start capturing the relevant  data with respect to their operations to estimate / calculate the emissions. The captured data should be cleaned, normalized and then used to calculate the organization emissions. So to calculate emissions, two types of input data is required. 
 
 #### 1. Activity data
-Activity data is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supplychain,etc.
+Activity data is a quantitative measure of a level of activity that results in GHG emissions. This is the data the organization captures from their operations / supply chain,etc.
 Example :
-- How many liters of fuel consumed, 
+- How many litres of fuel consumed, 
 - How much electricity is consumed, 
 - How many kilograms of material purchased
 
 #### 2. Emission factor
 An Emission factor is a factor that converts activity data into GHG emissions data.
 Example :
-- How much kg CO2 is emitted per liter of fuel consumed
+- How much kg CO2 is emitted per litre of fuel consumed
 - How much kg CO2 is emitted for one kwh power consumption 
 - How much kg CO2 is emitted per kilograms of material produced
 
-In otherwords, emission factors helps organizations to calculate the emissions or co2 equivalent of Greenhouse gases which are emitted because of the activities performed by their business. 
+In other words, emission factors helps organizations to calculate the emissions or co2 equivalent of Greenhouse gases which are emitted because of the activities performed by their business. 
 
-## 3. Who developes the Emissions Factors 
+## 3. Who develops  the Emissions Factors ?
 
-The Governments, environmental agencies, organizations, research insitutes publishes the emission factors for numerous activity based data,  based on the scientific studies and experiements conducted considering various parameters, conditions, states , regions , etc
+The Governments, environmental agencies, organizations, research institutes publishes the emission factors for numerous activity based data,  based on the scientific studies and experiments conducted considering various parameters, conditions, states , regions , etc
 
-Below are the some of the well known emission factor sets published by various organizations and countries. 
+Below are the some of the well-known emission factor sets published by various organizations and countries. 
 
 - ***International Energy Agency (IEA)*** publishes a comprehensive set of  Electricity and Heating emission factors annually covering most countries and regions in the world. Hence this emission factor set is leverage globally when the country or region specific emission factors are not available.  [more info](https://www.google.com/)
 
-- ***Environmental Protetction Agency (EPA)*** of United States, publishes emission factors for  electricity purchased from eGRID, mobile combustion, upstream and downstream transportation, business travel, product transport, and employee commuting.   [more info](https://www.google.com/)
+- ***Environmental Protection Agency (EPA)*** of United States, publishes emission factors for  electricity purchased from eGRID, mobile combustion, upstream and downstream transportation, business travel, product transport, and employee commuting.   [more info](https://www.google.com/)
 
 - ***Department for the Environment, Food and Rural Affairs (DEFRA)*** and the UK Government publishes a comprehensive set of  GHG emission factors covering Scope 1, 2 and some Scope 3 emission sources. Mainly applies to UK, however company across Europe use this factor set.  [more info](https://www.google.com/)
 
@@ -39,14 +39,14 @@ Below are the some of the well known emission factor sets published by various o
 
 - ***The Australian Government*** publishes GHG emission factors covering Scope 1, 2 data sources. [more info](https://www.google.com/)
 
-- ***Eora’s MRIO (Multi-region input-output)*** provides spend-based emission factor set across 66 industry sectors, which is gloabally recognized.  [more info](https://www.google.com/)
+- ***Eora’s MRIO (Multi-region input-output)*** provides spend-based emission factor set across 66 industry sectors, which is globally recognized.  [more info](https://www.google.com/)
 
 
 ## 4. What are the Supported Emissions Factors in Envizi ?
 
-Envizi supports emissions calculation for all Scope 1, Scope 2 and Scope 3 activity data. Eniviz maintains a emission factor library which contains all the publicly available emission factor sets as well as licensed factor sets, covering Scope 1, Scope 2 (both Location based and Market based) and Scope 3 (all categories supporting Spend-based / average data / supplier specific )
+Envizi supports emissions calculation for all Scope 1, Scope 2 and Scope 3 activity data. Envizi maintains a emission factor library which contains all the publicly available emission factor sets as well as licensed factor sets, covering Scope 1, Scope 2 (both Location based and Market based) and Scope 3 (all categories supporting Spend-based / average data / supplier specific )
 
-The managed emission factor sets includes the publicly available emission factors such as IEA, US eGRID, UK Defra, NGRES, Residual Mix Green-e, Residual Mix AIB, Eora66, USEEIO,NGRES + NGA, New Zeland Factor set, etc.  Below table provides the list of Manged Emisison factors in Envizi as of date Nov 2023 with more details.  Please refer [Envizi knowledge base](https://knowledgebase.envizi.com/home/managed-emission-factors) for latest updates.
+The managed emission factor sets includes the publicly available emission factors such as IEA, US eGRID, UK Defra, NGRES, Residual Mix Green-e, Residual Mix AIB, Eora66, USEEIO,NGRES + NGA, New Zealand Factor set, etc.  Below table provides the list of Manged Emission factors in Envizi as of date Nov 2023 with more details.  Please refer [Envizi knowledge base](https://knowledgebase.envizi.com/home/managed-emission-factors) for latest updates.
 #### Factor Set
 <table>
 <tr>
@@ -119,7 +119,7 @@ The managed emission factor sets includes the publicly available emission factor
         </td>
         <td>
             <li>Scope 2: electricity and electricity green offset</li>
-            <li>Scope 3: ectricity</li>            
+            <li>Scope 3: electricity</li>            
         </td>
         <td>
             <li>Publisher: 
@@ -227,7 +227,7 @@ The managed emission factor sets includes the publicly available emission factor
         <td>
             <li>Scope 1: fossil fuels, biofuels, refrigerants, passenger and delivery vehicles (distance based)</li>
             <li>Scope 2: NZ electricity : The yearly average figures provided are used in Envizi</li>
-            <li>Scope 3: pstream and downstream emissions resulting from Scope 1 and 2 emission sources, working from home measured in employee/day, travel by vehicle size and distance, freight in tonne.km, water supply and waste water,waste,materials, agriculture and forestry </li>                        
+            <li>Scope 3: upstream and downstream emissions resulting from Scope 1 and 2 emission sources, working from home measured in employee/day, travel by vehicle size and distance, freight in tonne.km, water supply and waste water, waste, materials, agriculture and forestry </li>                        
         </td>
         <td>
             <li>Publisher: [New Zealand Ministry for the Environment](https://environment.govt.nz/publications/measuring-emissions-a-guide-for-organisations-2023-emission-factors-summary/) </li>
@@ -242,14 +242,14 @@ The managed emission factor sets includes the publicly available emission factor
 [USEEIO Emission Factors](https://knowledgebase.envizi.com/home/managed-emission-factors-supply-chain-greenhouse-g)
         </td>
         <td>
-            <li>USA only only
+            <li>USA only
            </li>
         </td>
         <td>
             <li>Scope 3: Spend-based emission factors covering 394 commodities and 66 summary data types</li>
         </td>
         <td>
-            <li>Publisher: [US EPA Supplychain GHG Emission factors for US Industries and Commodities](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=349324&Lab=CESER) </li>
+            <li>Publisher: [US EPA Supply chain GHG Emission factors for US Industries and Commodities](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=349324&Lab=CESER) </li>
             <li>Envizi has managed this factor set since 2021</li>
             <li>factor set is managed using both raw figures with 2018 USD, and an inflation adjusted version</li>
 </li>
@@ -290,11 +290,11 @@ Canada - National Inventory Factors
 
 ## 5. How Emissions Factors are applied in Envizi ?
 
-As we learnt in the begining of the article, emissions are calculated for a given activity data  by applying the corresponding emission factor.  
+As we learnt in the beginning of the article, emissions are calculated for a given activity data  by applying the corresponding emission factor.  
 
 ### 5.1. Typical Emissions Factor selection process 
 
-Lets say, an organization in United States  purchases electricity from a electricity grid for their day to day operations. So here, `activity data = the electricity consumed` 
+Let’s say, an organization in United States  purchases electricity from a electricity grid for their day to day operations. So here, `activity data = the electricity consumed` 
 
 Now, how do we find which emission factor to apply on  this activity data(consumed electricity) to calculate the emissions?
 
@@ -304,12 +304,12 @@ Typically below steps are followed :
 2. If not,  look for available emission factors published for the regions, country, continent and global in sequence. 
     <img src="images/EM_Highlevel.png">    
 
-Apart from what we see in the above diagram,  the organization may have other crieterias to consider like chosing custom factors or standard factors, factor publishing date or effective date,etc. 
-When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor with so many crieterias to align with. That's when Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
+Apart from what we see in the above diagram,  the organization may have other criteria to consider like choosing custom factors or standard factors, factor publishing date or effective date, etc. 
+When the organization has operations spread across multiple regions / continents, it will be quite tedious and error prone process to find the applicable emission factor with so many criteria  to align with. That's when Envizi brings the value by automating the process to find the appropriate factor based by applying the Factor Selection Algorithm (FSA).  
 
 ### 5.1.2 How does the Factor selection works in Envizi? 
 
-Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA), which basically filerts through the all available factors based on the following  five criterias: 
+Assuming the data is loaded into Accounts / meters and normalized as Monthly data, Envizi apply the factor selection algorithm (FSA), which basically filters through the all available factors based on the following  five criteria: 
     
 - **Data type** : The type of activity data such as Electricity, Natural Gas, etc.
 - **Sub type** : Sub categorization similar to data type to link factors to accounts
@@ -328,7 +328,7 @@ Now, Lets look at how Emission factors are applied by Envizi. We have 3 examples
 - Data type - Electricity
 
 #### Example 1
-- Location -  `NewYork, US`
+- Location -  `New York, US`
 - Date of Activity - Oct,2023
 - Applied Factor - eGrid-2023
 - Effective from - Jan 2021
@@ -336,7 +336,7 @@ Now, Lets look at how Emission factors are applied by Envizi. We have 3 examples
 <img src="images/Envizi-Electricity-NY_EMF-Details.png">    
 
 #### Example 2
-- Location -  `London Center, UK`
+- Location -  `London Centre, UK`
 - Date of Activity - `Dec, 2022 `
 - Applied Factor - Managed DEFRA
 - Effective from - Jan 2022
@@ -347,7 +347,7 @@ Between example 1 and 2 the locations are different so the emission factor appli
 
 #### Example 3
 
-- Location -  London Center, UK
+- Location -  London Centre, UK
 - Date of Activity - `July, 2023`
 - Applied Factor - Managed DEFRA
 - Effective from - Jan 2023
@@ -357,9 +357,9 @@ Between example 1 and 2 the locations are different so the emission factor appli
 - Between example 2 and 3 the `Locations` are same but `Date of Activity` is different. 
 - Being the locations are same `DEFRA` Emission factor is applied for both.
 - But versions of the `DEFRA` Emission factor is different because the `Date of Activity` is different.
-- For example 2, `DEFRA-2022` factorset is applied because it is effective from `Jan 2022 - Dec 2022`.
-- For example 3, `DEFRA-2023` factorset is applied which is effective from `Jan 2023`.
-- You can also look at Total CO2e and Facotor source values from the screenshot. 
+- For example 2, `DEFRA-2022` factor set is applied because it is effective from `Jan 2022 - Dec 2022`.
+- For example 3, `DEFRA-2023` factor set is applied which is effective from `Jan 2023`.
+- You can also look at Total CO2e and Factor source values from the screenshot. 
 
 
 ### 5.1.4 Factors publishing dates
@@ -388,7 +388,7 @@ Envizi provides the standard set of emission factors with the platform. However,
 To create new Custom Factor in Envizi, navigate to  `Admin -> Configuration -> Custom Factors` . 
 
 Provide the inputs for the below parameters.
-- **Region** : Provide the City / state / region for which the Cusom factor should be applied
+- **Region** : Provide the City / state / region for which the Custom factor should be applied
 - **Data Type** : Choose the data type from the list
 - **Factor Set** : Go with default. Nothing to update
 - **Name** : Provide a unique name to represent the custom factor
@@ -424,4 +424,4 @@ Next, look at another monthly data record, where you can see a different custom 
 
 ## 8. Summary
     
-In this artilce, we have discussed about the emission factors, what are the well known emission factor sets available in public. We have also learnt how envizi uses Factor selection algorithm (FSA) to find the approproate emission factor, how those factors are managed and maintained  in Envizi. Lastly, we have learnt how Envizi supports organizations to create their own custom emission factors and apply the same for their activity data.
+In this article, we have discussed about the emission factors, what are the well-known emission factor sets available in public. We have also learnt how IBM Envizi uses Factor selection algorithm (FSA) to find the appropriate emission factor, how those factors are managed and maintained in Envizi. Lastly, we have learnt how Envizi supports organizations to create their own custom emission factors and apply the same for their activity data.
